@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List of Places</title>
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <!-- Logo of the application -->
         <img src="logo.png" alt="HBnB Logo" class="logo">
-        <nav>  
-            <a href="login.html" id="login-link">Login</a>
-            <a href="#" id="logout-link" >Logout</a>
+        <nav>
+            <!-- Logout link (Functionality to be handled by JavaScript) -->
+            <a href="#" id="logout-link">Logout</a>
         </nav>
     </header>
     <main>
+        <!-- Section for filtering places by country -->
         <section id="filter">
             <label for="country-filter">Filter by Country:</label>
-            <select id="country-filter">
-            </select>
+            <select id="country-filter"></select>
         </section>
-        <section id="places-list">
-        </section>
+        <!-- Section for listing places -->
+        <section id="places-list"></section>
     </main>
     <footer>
+        <!-- Footer content -->
         <p>© 2024 HBnB Evolution. All rights reserved.</p>
     </footer>
+    <!-- Link to external JavaScript file for functionality -->
     <script src="scripts.js"></script>
 </body>
 </html>
