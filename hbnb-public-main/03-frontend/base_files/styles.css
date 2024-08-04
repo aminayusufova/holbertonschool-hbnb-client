@@ -15,11 +15,23 @@ header {
     justify-content: space-between;
 }
 
+.star {
+    font-size: 1.5em; 
+    color: #ffd700; 
+    margin-right: 0.2em; 
+}
+
+.star.filled {
+    color: #ffd700; 
+}
+
+
+
 header .logo {
     height: 40px;
 }
 
-header #login-link {
+header a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -39,7 +51,7 @@ footer {
     padding: 10px;
     text-align: center;
     color: #fff;
-    position: fixed;
+    position: sticky;
     width: 100%;
     bottom: 0;
 }
@@ -86,7 +98,7 @@ footer {
     flex-wrap: wrap;
 }
 
-.place-card {
+.place {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -97,14 +109,14 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.place-card .place-image {
+.place img {
     max-width: 100%;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
 
-.place-card .details-button {
+.place a {
     background-color: #ffa500;
     text-decoration: none;
     border: none;
@@ -113,7 +125,7 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
-.place-details {
+#place-details {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,11 +137,6 @@ footer {
 }
 
 
-.place-image-large {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
 
 .place-info p {
     margin: 5px 0;

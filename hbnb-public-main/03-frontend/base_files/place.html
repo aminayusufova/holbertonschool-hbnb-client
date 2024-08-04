@@ -6,59 +6,19 @@
     <title>Place Details</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="place-page">
     <header>
-        
-        <img src="logo.png" alt="HBNB Logo">
-            <nav>
-                <a href="login.html" id="login-link">Login</a>
-            </nav>
-       
+        <img src="logo.png" alt="HBnB Logo" class="logo">
+        <nav>
+            <a href="login.html" id="login-link">Login</a>
+            <a href="#" id="logout-link" style="display: none;">Logout</a>
+        </nav>
     </header>
     <main>
-        <section class="place-details">
-            <img src="beach-house.jpg" alt="Beautiful Beach House" class="place-image-large">
-            <div class="place-info">
-                <h2>Beautiful Beach House</h2>
-                <p><strong>Host:</strong> John Doe</p>
-                <p><strong>Price per night:</strong> $150</p>
-                <p><strong>Location:</strong> Los Angeles, United States</p>
-                <p><strong>Description:</strong> A beautiful beach house with amazing views...</p>
-                <p><strong>Amenities:</strong> WiFi, Pool, Air Conditioning</p>
-            </div>
-        </section>
-
-        <section id="reviews">
-            <h2>Reviews</h2>
-            <div class="review-card">
-                <p><strong>Jane Smith:</strong> Great place to stay!</p>
-                <p><strong>Rating:</strong> ★★★★★</p>
-            </div>
-            <div class="review-card">
-                <p><strong>Robert Brown:</strong> Amazing location and very comfortable.</p>
-                <p><strong>Rating:</strong> ★★★★★</p>
-            </div>
-        </section>
-
-        <section id="add-review">
-            <h2>Add a Review</h2>
-            <form id="review-form" class="add-review form">
-                <label for="review-text">Review:</label>
-                <textarea id="review-text" name="review-text" required></textarea>
-                <label for="rating">Rating:</label>
-                <select id="rating" name="rating">
-                    <option value="1">1 Star</option>
-                    <option value="2">2 Stars</option>
-                    <option value="3">3 Stars</option>
-                    <option value="4">4 Stars</option>
-                    <option value="5">5 Stars</option>
-                </select>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+        <section id="place-details"></section>
     </main>
     <footer>
-        <p>&copy; 2024 HBNB Evolution. All rights reserved.</p>
+        <p>© 2024 HBnB Evolution. All rights reserved.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
